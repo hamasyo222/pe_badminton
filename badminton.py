@@ -19,14 +19,9 @@ import traceback
 import sys
 
 
-#keio_id = os.environ["KEIO_ID"]
-#keio_pass = os.environ["KEIO_PASS"]
-line_token = "bzuDXV3BSRUgbZ4dIeWpUbbaD0MWKWijF3IhaxCL8Fd"
-keio_id = "t20651sh"
-keio_pass = "Sayoonara196"
-
-
-
+keio_id = os.environ["KEIO_ID"]
+keio_pass = os.environ["KEIO_PASS"]
+line_token = os.environ["TOKEN"]
 
 def reserve():  
     # 操作する
@@ -74,7 +69,7 @@ def reserve():
     while True:
         event =  driver.find_element(By.CSS_SELECTOR,f'#maincontents > div:nth-child(9) > table > tbody > tr:nth-child({i}) > td:nth-child(3)').text
         print(event)
-        if event == "バドミントン":
+        if event == "ソフトバレーボール":
             try:
                 driver.execute_script("arguments[0].click();", driver.find_element(By.CSS_SELECTOR,f'#maincontents > div:nth-child(9) > table > tbody > tr:nth-child({i}) > td:nth-child(13) > a'))
                 driver.execute_script("arguments[0].click();", driver.find_element(By.CSS_SELECTOR,'#maincontents > form > p > input.w3-btn.w3-small.w3-padding-small.w3-round-large.w3-pale-green.w3-border'))
