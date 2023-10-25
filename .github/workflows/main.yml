@@ -2,7 +2,7 @@ name: reserve_bot
 on:
   schedule:
     # 定期実行する時間・・・①
-    - cron: '*/10 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
