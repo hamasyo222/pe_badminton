@@ -36,7 +36,7 @@ jobs:
           
       - name: Run script
         run: |
-          python main.py
+          python badminton.py
         env:
           KEIO_ID: ${{ secrets.KEIO_ID }}
           KEIO_PASS: ${{ secrets.KEIO_PASS }}
