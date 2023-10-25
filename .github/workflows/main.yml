@@ -40,6 +40,4 @@ jobs:
         env:
           KEIO_ID: ${{ secrets.KEIO_ID }}
           KEIO_PASS: ${{ secrets.KEIO_PASS }}
-          TELL: ${{ secrets.TELL }}
-          NOTIFY_TOKEN: ${{ secrets.NOTIFY_TOKEN }}
-          TWIN_TOKEN: ${{ secrets.TWIN_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
