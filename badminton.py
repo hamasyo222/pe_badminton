@@ -69,7 +69,7 @@ def reserve():
     while True:
         event =  driver.find_element(By.CSS_SELECTOR,f'#maincontents > div:nth-child(9) > table > tbody > tr:nth-child({i}) > td:nth-child(3)').text
         print(event)
-        if event == "ソフトバレーボール":
+        if event == "バドミントン":
             try:
                 driver.execute_script("arguments[0].click();", driver.find_element(By.CSS_SELECTOR,f'#maincontents > div:nth-child(9) > table > tbody > tr:nth-child({i}) > td:nth-child(13) > a'))
                 driver.execute_script("arguments[0].click();", driver.find_element(By.CSS_SELECTOR,'#maincontents > form > p > input.w3-btn.w3-small.w3-padding-small.w3-round-large.w3-pale-green.w3-border'))
